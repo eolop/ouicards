@@ -116,12 +116,16 @@ body {
 }
 
 .answer {
+  font-size : xx-large;
   background-color: #6fadde;
   min-height: 200px;
+  padding-top : 100px
+  
 }
 
 .answer p {
-  display: none;
+ display: none; 
+ padding-top : 42px 
 }
 
 /*
