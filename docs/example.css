@@ -10,6 +10,7 @@ body {
 }
 
 .flashcard {
+  text-align: center;
   width: 380px;
   margin: 0 auto;
   color: #fbfbfb;
@@ -23,7 +24,6 @@ body {
 
 .upload {
   background-color: #606e7e;
-  text-align: center;
   padding: 10px 0;
   -webkit-user-select: none;
   -moz-user-select: none;
