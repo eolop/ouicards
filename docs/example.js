@@ -21,6 +21,7 @@ function initializeHandlers() {
   $('.upload label').on('click', function() {
     $('.upload-questions-label').hide();
     $('.upload').css({"padding": " 0 2px 10px 2px"});
+    ouicards.serializeToBrowser('#questions-input-area', ',');
     $('#questions-input-area').show(100, function(){
     $('#load-questions').show(400);
     });

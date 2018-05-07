@@ -28,6 +28,14 @@
     return getFromLS();
   }
 
+  function serializeToBrowser(selector, delimiter) {
+    var dump='';
+    ouicards.flashcards.forEach(function(card) {
+      dump += card.question + delimiter + card.answer + '\n';
+    })
+    $(selector).text(dump);
+  }
+
   function next() {
     var newQuestion,
         bigInterval   = Math.ceil(ouicards.flashcards.length / 3) + 1,
@@ -149,6 +157,7 @@
     counter:            1,
     loadFromArray:      loadFromArray,
     loadFromBrowser:    loadFromBrowser,
+    serializeToBrowser:  serializeToBrowser,
     next:               next,
     correct:            correct,
     wrong:              wrong,
